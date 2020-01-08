@@ -6,14 +6,16 @@ SortPhotos is a Python script that organizes photos into folders by date and/or 
 
 ![Example](example.png)
 
-# DOCKER Container
+# Run as a DOCKER Container
   
-    git Clone repo
-    cd repo
+    git clone repository
+    cd to cloned repository
     update Make_Container.sh Tag line 
-    docker run -it -v PATH_TO_PIC_SRC:/orig -v PATH_TO_PIC_DEST:/dest Container_name sortphotos -r /orig /dest
+    docker run -d -v PATH_TO_PIC_SRC:/orig -v PATH_TO_PIC_DEST:/dest Container_name sortphotos -r /orig /dest
+    
+All commands Below are supported by the Docker container, Update command string accordingly 
 
-# Install
+# Native Install
 
     python setup.py install
  
